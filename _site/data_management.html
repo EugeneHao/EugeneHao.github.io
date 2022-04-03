@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    
+    <meta name="author" content="Hao Sun">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">Hao Sun</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="/applets">Applets</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/blog">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/coding/">Coding</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/research/">Research</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/resources/">Resources</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/courses/">Courses</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1> </h1>
+</div>
+
+<div class="row">
+  <div class="span12">
+    <hr />
+<p>layout: page
+title: “Data Management”
+description: “”
+—</p>
+
+<h1 id="data-management">Data Management</h1>
+
+<p>This page is devoted to helping scientists I interact with organize their data 
+for reproducibility and ease of analysis. 
+This page is primarily concerned with the creation and storage of 
+<a href="https://en.wikipedia.org/wiki/Raw_data">raw data</a> and not with the creation or 
+storage of tidy data that will typically be used for data analysis. 
+To construct tidy data, 
+you should be using a script in a software program, 
+e.g. <a href="http://r-project.org/">R</a>.</p>
+
+<p>To construct this page, I used many sources including</p>
+
+<ul>
+  <li><a href="http://www.ncddc.noaa.gov/activities/science-technology/data-management/">NOAA - Data Management Best Practices</a></li>
+  <li><a href="http://www.esajournals.org/doi/abs/10.1890/0012-9623-90.2.205">ESA Bulletin - Some Simple Guidelines for Effective Data Management</a></li>
+</ul>
+
+<h2 id="what-is-raw-data">What is raw data?</h2>
+
+<p>For the purpose of this page,</p>
+
+<blockquote>
+  <p>raw data is a digital version of non-digital information.</p>
+</blockquote>
+
+<p>Basically, raw data is a digitized version of a lab notebook or a print-out 
+from a machine. 
+When a machine provides a digital version, 
+then it is just that file exactly as it came from the machine.</p>
+
+<h2 id="tips-in-preparing-raw-data-files">Tips in preparing raw data files</h2>
+
+<p>The main goal with these tips are to simplify the raw data creation process in 
+order to minimize mistakes and maximize reproducibility.</p>
+
+<ul>
+  <li>
+    <p>Store the data in a nonproprietary software format</p>
+
+    <p>I prefer the use of plain text files for raw data, e.g. comma delimited textfile (.csv). Propietary formats include Excel and Access and should be avoided for raw data.</p>
+  </li>
+  <li>
+    <p>Store the data in nonproprietary hardward formats (and back it up)</p>
+
+    <p>Storing data on the internet is probably the best route here. This can be done without releasing data, e.g. as a private <a href="http://github.com/">github</a> repository. Some organizations have begun to provide a place for data storage, e.g. <a href="http://esapubs.org/archive/default.htm">Ecological Archives</a> or <a href="http://datadryad.org/">Dryad</a>. In addition, all raw data should be backed up, e.g. on your computer’s hard drive.</p>
+  </li>
+  <li>
+    <p>Provide a descriptive file name</p>
+
+    <p>The file name should provide details of the place, time, and theme of the data contained within.
+  File names should not have any spaces.</p>
+  </li>
+</ul>
+
+<h2 id="tips-in-preparing-the-raw-data">Tips in preparing the raw data</h2>
+
+<ul>
+  <li>
+    <p>Write each piece of information only once</p>
+
+    <p>For example, you run an experiment at a bunch of sites that are visited repeatedly. 
+  The treatment assignment should only be recorded once.</p>
+
+    <p>Many times I receive data where this information has been cut-and-pasted to many spreadsheets. 
+  Instead you should use a script to combine the site treatment assignment with recorded data at each visit.</p>
+  </li>
+  <li>
+    <p>Include a single header row that describes the content in that column</p>
+
+    <p>Use informative variable names as the first row in the data file.<br />
+  These names should have no spaces, use an underscore instead. 
+  I suggest always using lowercase to ease future analyses.</p>
+
+    <p>Multiple files with similar content should have the <strong>exact</strong> same header rows.</p>
+  </li>
+  <li>
+    <p>Provide an identification to the original non-digital data</p>
+
+    <p>In the raw data, you should have an identification that allows you to go back and check the original non-digital data. 
+  For example, you might have a column in the raw data that references the lab notebook number or, perhaps, the filename refers to the original data.
+  Including the identification allows you to go back and check the original source to verify that the raw data are correct.</p>
+  </li>
+  <li>
+    <p>Use plain ASCII text</p>
+
+    <p>Use plain ASCII text for your file names, header rows, and data values. <a href="https://en.wikipedia.org/wiki/ASCII#ASCII_printable_code_chart">This</a> table from wikipedia has all the ASCII characters in the Glyph column.</p>
+  </li>
+  <li>
+    <p>Record full dates using standardized formats</p>
+
+    <p>In R, the only two Date formats that are recognized (by default) are “%Y-%m-%d” and “%Y/%m/%d”. 
+  I particularly like year followed by month followed by day because when alphabetical listing is equivalent to chronological listing.</p>
+  </li>
+</ul>
+
+<h2 id="what-is-tidy-data">What is tidy data?</h2>
+
+<p>For the purpose of this page,</p>
+
+<blockquote>
+  <p>tidy data is any combination, summarization, or reshaping of your raw data.</p>
+</blockquote>
+
+<p>Unlike the relatively strict ``rules’’ for raw data, tidy data can be any format you want. 
+I know many individuals use Excel to produce summary statistics, figures, and tables.
+Although this is fine, I suggest a scripting language, e.g. R or SAS, that will allow you to easily recreate those statistics, figures, and tables if errors in the raw data are found.</p>
+
+
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <a href="https://twitter.com/jaradniemi?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @jaradniemi</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <p>&copy; Hao Sun 2013-2020
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="https://getbootstrap.com/2.3.2/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37794201-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>
+

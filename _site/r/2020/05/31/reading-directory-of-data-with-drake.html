@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Reading a directory of data with drake</title>
+    <meta name="description" content="">
+    <meta name="author" content="Hao Sun">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">Hao Sun</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="/applets">Applets</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/blog">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/coding/">Coding</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/research/">Research</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/resources/">Resources</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/courses/">Courses</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>Reading a directory of data with drake </h1>
+</div>
+
+<div class="row">
+  <div class="span8">
+    
+<p><a href="https://github.com/ropensci/drake">drake</a> 
+is an R package that provides 
+<a href="https://www.gnu.org/software/make/">make</a> functionality entirely within R.
+That is, it will run a set of commands in a hierarchical (or tree) structure. 
+Then, when when pieces of that structure changes, 
+drake will only re-run the pieces that need to be re-run.</p>
+
+<p>I have been using 
+<a href="https://gist.github.com/jarad/8f3b79b33489828ab8244e82a4a0c5b3">these two functions</a> 
+to read in a directory worth of data. 
+Everytime I run these functions, 
+I need to re-read the entire directory. 
+It would be more convenient if I could use drake, or something similar, 
+so that I only need to reread the files that have changed.</p>
+
+<p>So here is a script that will perform that process</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">options</span><span class="p">(</span><span class="n">width</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">100</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="s2">"drake"</span><span class="p">)</span><span class="w">
+
+</span><span class="n">dir.create</span><span class="p">(</span><span class="s2">"data"</span><span class="p">)</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## Warning in dir.create("data"): 'data' already exists</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">write.csv</span><span class="p">(</span><span class="n">data.frame</span><span class="p">(</span><span class="n">g</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">),</span><span class="w"> </span><span class="n">file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"data/g1.csv"</span><span class="p">)</span><span class="w">
+</span><span class="n">write.csv</span><span class="p">(</span><span class="n">data.frame</span><span class="p">(</span><span class="n">g</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">),</span><span class="w"> </span><span class="n">file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"data/g2.csv"</span><span class="p">)</span><span class="w">
+</span><span class="n">files</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">list.files</span><span class="p">(</span><span class="s2">"data"</span><span class="p">,</span><span class="w"> </span><span class="s2">"*.csv"</span><span class="p">,</span><span class="w"> </span><span class="n">full.names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span><span class="w">
+
+</span><span class="n">add2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">d</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1"># example function to apply to each individual data.frame</span><span class="w">
+  </span><span class="n">d</span><span class="o">$</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">d</span><span class="o">$</span><span class="n">x</span><span class="m">+2</span><span class="w">
+  </span><span class="nf">return</span><span class="p">(</span><span class="n">d</span><span class="p">)</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span><span class="n">plan</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">drake_plan</span><span class="p">(</span><span class="w"> </span><span class="c1"># This is where you define the set of commands to run</span><span class="w">
+  </span><span class="n">data</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="n">target</span><span class="p">(</span><span class="w">
+    </span><span class="n">read.csv</span><span class="p">(</span><span class="n">file_in</span><span class="p">(</span><span class="n">file</span><span class="p">)),</span><span class="w">
+    </span><span class="n">transform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">map</span><span class="p">(</span><span class="n">file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">!!</span><span class="n">files</span><span class="p">)</span><span class="w">
+  </span><span class="p">),</span><span class="w">
+  </span><span class="n">add2</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="n">target</span><span class="p">(</span><span class="w">
+    </span><span class="n">add2</span><span class="p">(</span><span class="n">data</span><span class="p">),</span><span class="w">
+    </span><span class="n">transform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">map</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="w">
+  </span><span class="p">),</span><span class="w">
+  </span><span class="n">all</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">target</span><span class="p">(</span><span class="w">
+    </span><span class="n">dplyr</span><span class="o">::</span><span class="n">bind_rows</span><span class="p">(</span><span class="n">add2</span><span class="p">),</span><span class="w">
+    </span><span class="n">transform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">combine</span><span class="p">(</span><span class="n">add2</span><span class="p">)</span><span class="w">
+  </span><span class="p">),</span><span class="w">
+  </span><span class="n">out</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">saveRDS</span><span class="p">(</span><span class="n">all</span><span class="p">,</span><span class="w"> </span><span class="n">file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">file_out</span><span class="p">(</span><span class="s2">"all.RDS"</span><span class="p">))</span><span class="w">
+</span><span class="p">)</span></code></pre></figure>
+
+<p>Let’s take a look at the plan</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">plan</span><span class="w"> </span><span class="c1"># Take a look at the targets and commands that will be run</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## # A tibble: 6 x 2
+##   target                command                                                       
+##   &lt;chr&gt;                 &lt;expr&gt;                                                        
+## 1 add2_data_data.g1.csv add2(data_data.g1.csv)                                        
+## 2 add2_data_data.g2.csv add2(data_data.g2.csv)                                        
+## 3 all                   dplyr::bind_rows(add2_data_data.g1.csv, add2_data_data.g2.csv)
+## 4 data_data.g1.csv      read.csv(file_in("data/g1.csv"))                              
+## 5 data_data.g2.csv      read.csv(file_in("data/g2.csv"))                              
+## 6 out                   saveRDS(all, file = file_out("all.RDS"))</code></pre></figure>
+
+<p>Now to actually run the plan use</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">make</span><span class="p">(</span><span class="n">plan</span><span class="p">)</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## ▶ target data_data.g1.csv</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## ▶ target add2_data_data.g1.csv</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## ▶ target all</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## ▶ target out</code></pre></figure>
+
+<p>If you try to run the plan again, drake tells you</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">make</span><span class="p">(</span><span class="n">plan</span><span class="p">)</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## ✓ All targets are already up to date.</code></pre></figure>
+
+<p>Now if a file changes, you can just rerun the plan.</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">write.csv</span><span class="p">(</span><span class="n">data.frame</span><span class="p">(</span><span class="n">g</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">11</span><span class="p">),</span><span class="w"> </span><span class="n">file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"data/g1.csv"</span><span class="p">)</span><span class="w">
+</span><span class="n">make</span><span class="p">(</span><span class="n">plan</span><span class="p">)</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## ▶ target data_data.g1.csv</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## ▶ target add2_data_data.g1.csv</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## ▶ target all</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## ▶ target out</code></pre></figure>
+
+
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/r/2020/05/15/complete-survey-data-using-tidyr" title="Complete survey data using tidyr">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/latex/2021/10/13/tex-root" title="Using TEX root in child document to compile parent document">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    
+    var disqus_shortname = 'jarad'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+  
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>31 May 2020</span></div>
+
+  
+    <h4>Tags</h4>
+    <ul class="tag_box">
+    
+    
+
+
+  
+     
+    	<li><a href="/tags.html#R-ref">R <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#drake-ref">drake <span>1</span></a></li>
+    
+  
+
+
+
+    </ul>
+    
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <a href="https://twitter.com/jaradniemi?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @jaradniemi</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <p>&copy; Hao Sun 2013-2020
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="https://getbootstrap.com/2.3.2/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37794201-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>
+
