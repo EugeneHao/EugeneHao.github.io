@@ -27,4 +27,6 @@ This website is designed for recording notes for STAT 510.
 10. [The Aitken Model](notes/10. The Aitken Model.html)
 11. [Linear Mixed-Effects Models](notes/11. Linear Mixed-Effects Models.html)
 12. [The ANOVA Approach to the Analysis of Linear Mixed-Effects Models](notes/12. The ANOVA Approach to the Analysis of Linear Mixed-Effects Models.html)
+13. [The Cochran-Satterthwaite Approximation for Linear Combination of Mean Squares](notes/13. The Cochran-Satterthwaite Approximation for Linear Combination of Mean Squares.html)
+14. [Linear Mixed-Effects Models for Data from Split-Plot Experiments](notes/14. Linear Mixed-Effects Models for Data from Split-Plot Experiments.html)
 
