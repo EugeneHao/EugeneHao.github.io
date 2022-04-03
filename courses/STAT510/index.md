@@ -25,5 +25,6 @@ This website is designed for recording notes for STAT 510.
 8. [ANOVA for Unbalanced Two-Factor Experiments](notes/8. ANOVA for Unbalanced Two-Factor Experiments.html)
 9. [Orthogonal Linear Combinations, Contrasts and Additional Partitioning of ANOVA Sums of Squares](notes/9. Orthogonal Linear Combinations, Contrasts and Additional Partitioning of ANOVA Sums of Squares.html)
 10. [The Aitken Model](notes/10. The Aitken Model.html)
-11. 
+11. [Linear Mixed-Effects Models](notes/11. Linear Mixed-Effects Models.html)
+12. [The ANOVA Approach to the Analysis of Linear Mixed-Effects Models](notes/12. The ANOVA Approach to the Analysis of Linear Mixed-Effects Models.html)
 
