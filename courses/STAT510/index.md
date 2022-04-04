@@ -1,7 +1,7 @@
 ---
 layout: page
 title: STAT 510
-tagline: STATISTCL MTHODS II
+tagline: STATISTCL METHODS II
 ---
 {% include JB/setup %}
 
