@@ -30,4 +30,6 @@ This website is designed for recording notes for STAT 510.
 13. [The Cochran-Satterthwaite Approximation for Linear Combination of Mean Squares](notes/13. The Cochran-Satterthwaite Approximation for Linear Combination of Mean Squares.html)
 14. [Linear Mixed-Effects Models for Data from Split-Plot Experiments](notes/14. Linear Mixed-Effects Models for Data from Split-Plot Experiments.html)
 15. [ANOVA for Balanced Split-Plot Experiments](notes/15. ANOVA for Balanced Split-Plot Experiments.html)
+16. [SAS Analysis of Split-Plot Experiments](notes/16. SAS Analysis of Split-Plot Experiments.html)
+17. [R Analysis of Split-Plot Experiments](notes/17. R Analysis of Split-Plot Experiments.html)
 
