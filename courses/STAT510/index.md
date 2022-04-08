@@ -32,4 +32,6 @@ This website is designed for recording notes for STAT 510.
 15. [ANOVA for Balanced Split-Plot Experiments](notes/15. ANOVA for Balanced Split-Plot Experiments.html)
 16. [SAS Analysis of Split-Plot Experiments](notes/16. SAS Analysis of Split-Plot Experiments.html)
 17. [R Analysis of Split-Plot Experiments](notes/17. R Analysis of Split-Plot Experiments.html)
+18. [More Example Split-Plot Experiments](notes/18. More Example Split-Plot Experiments.html)
+19. 
 
