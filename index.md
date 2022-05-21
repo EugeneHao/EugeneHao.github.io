@@ -7,11 +7,10 @@ tagline: PhD Student, Statistics Department, Iowa State University
 
 ## About ([CV](cv/CV.pdf))
 
-I am an associate professor in the [Department of Statistics](https://www.stat.iastate.edu/ "ISU Statistics Department") at [Iowa State University](http://www.iastate.edu/ "Iowa State University"). 
-My research focuses on [Bayesian inference](https://en.wikipedia.org/wiki/Bayesian_inference "Bayesian inference") typically accomplished through computational methods such as [Markov chain Monte Carlo](https://en.wikipedia.org/wiki/Markov_chain_Monte_Carlo "MCMC") and [sequential Monte Carlo](https://en.wikipedia.org/wiki/Particle_filter "SMC") (SMC). 
-I received a PhD in [Statistical Science](https://stat.duke.edu/ "Stats @ Duke") from [Duke University](http://duke.edu/ "Duke University") in 2009, an MS in [Biostatistics](https://www.sph.umn.edu/academics/divisions/biostatistics// "Biostat @ Minnesota") from the [University of Minnesota](http://www1.umn.edu/twincities/index.html "University of Minnesota") in 2005, and a Bachelors of [Chemical Engineering](https://www.cems.umn.edu/ "Chemical Engineering @ Minnesota") from the [University of Minnesota](https://twin-cities.umn.edu/ "University of Minnesota") in 1999. 
-I worked in a [Drosophila genetics lab](https://cbs.umn.edu/contacts/michael-simmons-phd "Michael Simmons") from 2001-2003 and before that at [Proctor & Gamble](https://www.pg.com/ "P&G") in [Cincinnati, Ohio](https://www.cincinnati-oh.gov/cityofcincinnati/ "Cincinnati, Ohio") as a Research Engineer from 1999-2001. 
-Originally, I am from [Duluth, Minnesota](https://duluthmn.gov/ "Duluth, Minnesota") and attended [Marshall School](https://www.marshallschool.org/). I now live in [Ames, Iowa](http://www.cityofames.org/ "Ames, Iowa"). Go [Clones](https://cyclones.com/ "ISU Cyclones")!
+I am now a senior manager in the department of Global Biometric Sciences at [Bristol Myers Squibb](https://www.bms.com/). 
+
+I received my PhD in [Statistics](https://www.stat.iastate.edu/ "ISU Statistics Department") at [Iowa State University](http://www.iastate.edu/ "Iowa State University") in 2022, and a Bachelors of Statistics from [University of Science and Technology of China](https://en.ustc.edu.cn/). My research topics includes survey modeling, small area estimation and graphical model. 
+
 
 ## Latest Posts
 
