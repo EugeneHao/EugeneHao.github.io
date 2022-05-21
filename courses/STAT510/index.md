@@ -35,3 +35,9 @@ This website is designed for recording notes for STAT 510.
 18. [More Example Split-Plot Experiments](notes/18. More Example Split-Plot Experiments.html)
 19. 
 
+
+
+
+
+
+

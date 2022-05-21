@@ -8,4 +8,4 @@ group: navigation
 
 ## PhD courses
 
-- [STAT 510](STAT510)
+- [STAT 510](https://bookdown.org/eugenesun95/510Notes/)
