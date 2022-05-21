@@ -20,26 +20,15 @@ I received my PhD in [Statistics](https://www.stat.iastate.edu/ "ISU Statistics 
   {% endfor %}
 </ul>
 
-## Spring 2022 Courses ([all courses](courses/))
-
-  - [HCI 522](courses/hci522)
 
 ## Contact
 
 - Mailing: Department of Statistics, Iowa State University, Ames, IA 50011-1210
 - Office: [Snedecor 1215](http://www.fpm.iastate.edu/maps/default.asp?zoom=2&xcenter=1471&ycenter=1869&background=map&layer=buildingnames&xshow=1470&yshow=1868 "Map to Snedecor Hall")
 - Email: <hao123@iastate.edu>
-- Social: 
+- [LinkedIn](https://www.linkedin.com/in/hao-sun-13207/ "Hao Sun's LinkedIn account")
+- [GitHub](https://github.com/EugeneHao/ "Hao Sun's GitHub account")
+- [OrcID](http://orcid.org/0000-0001-7995-7101)
 
-<script src="https://apis.google.com/js/platform.js"></script>
-<div class="g-ytsubscribe" data-channel="jaradniemi"></div>
-<a href="https://twitter.com/jaradniemi?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @jaradniemi</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-  - [Skype](skype:jaradniemi?add "Jarad Niemi's Skype account")
-  - [LinkedIn](http://www.linkedin.com/in/jaradniemi "Jarad Niemi's LinkedIn account")
-  - [GitHub](https://github.com/jarad/ "Jarad Niemi's GitHub account")
-  - [OrcID](http://orcid.org/0000-0002-5079-158X)
-- Phone
-  - (515) 715-3998
 
 
