@@ -14,8 +14,9 @@ group: navigation
 
 
 
-## R Packages 
+## R 
 
+* [Seamless R and C++ Integration With Rcpp](https://bookdown.org/eugenesun95/Seamless_R_and_Cpp/)
 
 
 
