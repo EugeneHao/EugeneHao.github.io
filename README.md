@@ -1,7 +1,7 @@
-jarad.github.com
+EugeneHao.github.com
 ================
 
-This is my professional website (outside of a university).
+This is my personal website. 
 
 ## Serve locally
 

@@ -3,12 +3,12 @@
 #' 'processed' will be converted to markdown (with out_ext file extention, '.md'
 #' by default). It will change the published parameter to 'true' and change the
 #' status parameter to 'publish'.
-#' 
+#'
 #' @param dir the directory to process R Markdown files.
 #' @param out_ext the file extention to use for processed files.
 #' @param in_ext the file extention of input files to process.
 #' @return nothing.
-#' @author Jason Bryer <jason@bryer.org>, Jarad Niemi <
+#' @author Jason Bryer <jason@bryer.org>, Hao Sun <
 convertRMarkdown <- function(dir=getwd(), images.dir=dir, images.url='/images/',
            out_ext='.md', in_ext='.Rmd') {
   require(knitr, quietly=TRUE, warn.conflicts=FALSE)
@@ -39,7 +39,7 @@ convertRMarkdown <- function(dir=getwd(), images.dir=dir, images.url='/images/',
           opts_knit$set(base.url=images.url)
           try(knit(text=content, output=outFile), silent=FALSE)
         } else {
-          warning(paste("Not processing ", f, ", status is '", status, 
+          warning(paste("Not processing ", f, ", status is '", status,
                   "'. Set status to 'process' to convert.", sep=''))
         }
       } else {
