@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Hao Sun
-tagline: PhD Student, Statistics Department, Iowa State University
+tagline: Ph.D., Senior Manager, Biostatistics, BMS
 ---
 {% include JB/setup %}
 
 ## About ([CV](cv/CV.pdf))
 
-I am now a senior manager in the department of Global Biometric Sciences at [Bristol Myers Squibb](https://www.bms.com/). 
+Hi! Welcome to my personal webpage. I am a biostatistician in the department of Global Biometric Sciences at [Bristol Myers Squibb](https://www.bms.com/). 
 
 I received my PhD in [Statistics](https://www.stat.iastate.edu/ "ISU Statistics Department") at [Iowa State University](http://www.iastate.edu/ "Iowa State University") in 2022, and a Bachelors of Statistics from [University of Science and Technology of China](https://en.ustc.edu.cn/). My research topics includes survey modeling, small area estimation and graphical model. 
 
@@ -16,8 +16,6 @@ I received my PhD in [Statistics](https://www.stat.iastate.edu/ "ISU Statistics 
 
 ## Contact
 
-- Mailing: Department of Statistics, Iowa State University, Ames, IA 50011-1210
-- Office: [Snedecor 1215](http://www.fpm.iastate.edu/maps/default.asp?zoom=2&xcenter=1471&ycenter=1869&background=map&layer=buildingnames&xshow=1470&yshow=1868 "Map to Snedecor Hall")
 - Email: <hao.sun@bms.com>, <hao123@iastate.edu>
 - [LinkedIn](https://www.linkedin.com/in/hao-sun-13207/ "Hao Sun's LinkedIn account")
 - [GitHub](https://github.com/EugeneHao/ "Hao Sun's GitHub account")
