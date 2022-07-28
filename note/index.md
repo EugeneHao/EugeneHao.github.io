@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Try
+title: Notes
 description: ""
 group: navigation
 ---
