@@ -6,10 +6,21 @@ group: navigation
 ---
 {% include JB/setup %}
 
-The main purpose of this page is to provide one location for myself and others in the department or university for relevant documents concerning employment at Iowa State University.
+The main purpose of this page is to provide some useful resources. 
 
-# Faculty
+# Statistics: 
 
-- [Governance documents](governance.html)
+## Missing Data
+- [Flexible Imputation of Missing Data, Stef van Buuren](https://stefvanbuuren.name/fimd/ch-multivariate.html)
 
+## Bayes
+- [Bayesian Data Analysis, Andrew Gelman et al. ](http://www.stat.columbia.edu/~gelman/book/)
 
+# Programming: 
+
+## R
+
+- [R for Data Science, Hadley Wickman](https://r4ds.had.co.nz/)
+- [Advanced R, Hadley Wickman](https://adv-r.hadley.nz/)
+- [bookdown: Authoring Books and Technical Documents with R Markdown, Yihui Xie](https://bookdown.org/yihui/bookdown/)
+- [Mastering Shiny, Hadley Wickham](https://mastering-shiny.org/index.html)
