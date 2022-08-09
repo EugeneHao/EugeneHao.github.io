@@ -10,15 +10,15 @@ The main purpose of this page is to provide some useful resources.
 
 # Statistics: 
 
-## Missing Data
+#### Missing Data
 - [Flexible Imputation of Missing Data, Stef van Buuren](https://stefvanbuuren.name/fimd/ch-multivariate.html)
 
-## Bayes
+#### Bayes
 - [Bayesian Data Analysis, Andrew Gelman et al. ](http://www.stat.columbia.edu/~gelman/book/)
 
 # Programming: 
 
-## R
+#### R
 
 - [R for Data Science, Hadley Wickman](https://r4ds.had.co.nz/)
 - [Advanced R, Hadley Wickman](https://adv-r.hadley.nz/)
