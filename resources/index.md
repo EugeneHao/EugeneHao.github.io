@@ -8,7 +8,7 @@ group: navigation
 
 The main purpose of this page is to provide some useful resources. 
 
-# Statistics: 
+## Statistics: 
 
 #### Missing Data
 - [Flexible Imputation of Missing Data, Stef van Buuren](https://stefvanbuuren.name/fimd/ch-multivariate.html)
@@ -16,7 +16,7 @@ The main purpose of this page is to provide some useful resources.
 #### Bayes
 - [Bayesian Data Analysis, Andrew Gelman et al. ](http://www.stat.columbia.edu/~gelman/book/)
 
-# Programming: 
+## Programming: 
 
 #### R
 
