@@ -22,10 +22,14 @@ The main purpose of this page is to provide some useful resources.
 
 - [R for Data Science, Hadley Wickman](https://r4ds.had.co.nz/)
 - [Advanced R, Hadley Wickman](https://adv-r.hadley.nz/)
+- [ggplot2 - Elegant Graphics for Data Science, Hadley Wickman](https://ggplot2-book.org/index.html)
 - [bookdown: Authoring Books and Technical Documents with R Markdown, Yihui Xie](https://bookdown.org/yihui/bookdown/)
 - [R Markdown: The Definitive Guide, Yihui Xie](https://bookdown.org/yihui/rmarkdown/)
-- [Mastering Shiny, Hadley Wickham](https://mastering-shiny.org/index.html)
 
+#### R Shiny 
+- [Mastering Shiny, Hadley Wickham](https://mastering-shiny.org/index.html)
+- [Engineering Production-Grade Shiny Apps, Colin Fay, et al. ](https://engineering-shiny.org/index.html)
+- [The Shiny AWS Book](https://business-science.github.io/shiny-production-with-aws-book/index.html)
 
 ## Blogs 
 
