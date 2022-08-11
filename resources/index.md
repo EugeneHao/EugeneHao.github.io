@@ -30,7 +30,7 @@ The main purpose of this page is to provide some useful resources.
 - [Mastering Shiny, Hadley Wickham](https://mastering-shiny.org/index.html)
 - [Engineering Production-Grade Shiny Apps, Colin Fay, et al. ](https://engineering-shiny.org/index.html)
 - [The Shiny AWS Book](https://business-science.github.io/shiny-production-with-aws-book/index.html)
-
+- [Outstanding User Interfaces with Shiny](https://unleash-shiny.rinterface.com/web-intro.html)
 ## Blogs 
 
 - [Yihui Xie](https://yihui.org/en/)
