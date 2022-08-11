@@ -31,7 +31,10 @@ The main purpose of this page is to provide some useful resources.
 - [Engineering Production-Grade Shiny Apps, Colin Fay, et al. ](https://engineering-shiny.org/index.html)
 - [The Shiny AWS Book](https://business-science.github.io/shiny-production-with-aws-book/index.html)
 - [Outstanding User Interfaces with Shiny](https://unleash-shiny.rinterface.com/web-intro.html)
+- [WDI Singapore](https://wdi-sg.github.io/gitbook-2018/ )
+
 ## Blogs 
 
 - [Yihui Xie](https://yihui.org/en/)
 - [Xiangyun Huang](https://xiangyun.rbind.io/post/)
+- [Chunqin Deng](http://onbiostatistics.blogspot.com/)
