@@ -11,6 +11,7 @@ group: navigation
 - [STAT 510](https://bookdown.org/eugenesun95/510Notes/)
 - [STAT 544](https://bookdown.org/eugenesun95/544Notes/)
 
-## Clinical Trials
+## Clinical Study
 
-- [Design Notes](https://bookdown.org/eugenesun95/designbook/)
+- [Clinical Design](https://bookdown.org/eugenesun95/designbook/)
+- [Survival Analysis](https://bookdown.org/eugenesun95/SurvivalAnalysis/)
