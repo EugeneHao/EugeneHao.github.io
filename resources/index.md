@@ -25,6 +25,7 @@ The main purpose of this page is to provide some useful resources.
 - [ggplot2 - Elegant Graphics for Data Science, Hadley Wickman](https://ggplot2-book.org/index.html)
 - [bookdown: Authoring Books and Technical Documents with R Markdown, Yihui Xie](https://bookdown.org/yihui/bookdown/)
 - [R Markdown: The Definitive Guide, Yihui Xie](https://bookdown.org/yihui/rmarkdown/)
+- [Tidy Modeling with R](https://www.tmwr.org/index.html)
 
 #### R Shiny 
 - [Mastering Shiny, Hadley Wickham](https://mastering-shiny.org/index.html)
