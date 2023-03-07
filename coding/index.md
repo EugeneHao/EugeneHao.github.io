@@ -18,7 +18,7 @@ group: navigation
 
 ## SAS 
 
-* [SAS Tutorial](https://bookdown.org/eugenesun95/SAStutorial/)
+* [Statistics with SAS](http://rpubs.com/EugeneHao/1012233)
 
 ## Latex 
 
