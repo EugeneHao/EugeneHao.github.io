@@ -21,6 +21,7 @@ group: navigation
 * [Statistics with SAS - Week 1](http://rpubs.com/EugeneHao/1012233)
 * [Statistics with SAS - Week 2](http://rpubs.com/EugeneHao/1014993)
 * [Statistics with SAS - Week 3](http://rpubs.com/EugeneHao/1014995)
+* [Statistics with SAS - Week 4](http://rpubs.com/EugeneHao/1015470)
 
 
 ## Latex 
