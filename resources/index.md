@@ -34,6 +34,10 @@ The main purpose of this page is to provide some useful resources.
 - [Outstanding User Interfaces with Shiny](https://unleash-shiny.rinterface.com/web-intro.html)
 - [WDI Singapore](https://wdi-sg.github.io/gitbook-2018/ )
 
+#### SAS 
+
+- [Free SAS Books](https://support.sas.com/en/books/free-books.html)
+
 ## Blogs 
 
 - [Yihui Xie](https://yihui.org/en/)
