@@ -23,6 +23,8 @@ group: navigation
 * [Statistics with SAS - Week 3](http://rpubs.com/EugeneHao/1014995)
 * [Statistics with SAS - Week 4](http://rpubs.com/EugeneHao/1015470)
 * [Statistics with SAS - Week 5](http://rpubs.com/EugeneHao/1015811)
+* [Statistics with SAS - Week 6](http://rpubs.com/EugeneHao/1016393)
+
 
 ## Latex 
 
