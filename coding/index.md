@@ -13,7 +13,7 @@ group: navigation
 
 ## R 
 
-* [R Plot Gallery](https://bookdown.org/eugenesun95/Rplotgallery/)
+* [R Output Gallery](https://bookdown.org/eugenesun95/Rplotgallery/)
 * [Shiny](https://bookdown.org/eugenesun95/shinynotebook/)
 
 ## SAS 
