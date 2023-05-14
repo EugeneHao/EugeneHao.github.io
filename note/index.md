@@ -13,5 +13,6 @@ group: navigation
 
 ## Clinical Study
 
+- [Biostatistics Terminology](https://bookdown.org/eugenesun95/biostat_terms/)
 - [Clinical Design](https://bookdown.org/eugenesun95/designbook/)
 - [Survival Analysis](https://bookdown.org/eugenesun95/SurvivalAnalysis/)
