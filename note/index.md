@@ -16,3 +16,7 @@ group: navigation
 - [Biostatistics Terminology](https://bookdown.org/eugenesun95/biostat_terms/)
 - [Clinical Design](https://bookdown.org/eugenesun95/designbook/)
 - [Survival Analysis](https://bookdown.org/eugenesun95/SurvivalAnalysis/)
+
+## ChatGPT Guide 
+
+- [ChatGPT Settings](https://bookdown.org/eugenesun95/chatgpt_settings/)
