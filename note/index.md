@@ -19,4 +19,4 @@ group: navigation
 
 ## ChatGPT Guide 
 
-- [ChatGPT Settings](https://bookdown.org/eugenesun95/chatgpt_settings/)
+- [ChatGPT Settings](http://rpubs.com/EugeneHao/1061059/)
