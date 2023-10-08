@@ -16,6 +16,10 @@ The main purpose of this page is to provide some useful resources.
 #### Bayes
 - [Bayesian Data Analysis, Andrew Gelman et al. ](http://www.stat.columbia.edu/~gelman/book/)
 
+#### Clinical Trial Designs 
+
+- [Dose Finding Literature](https://reliable-frown-add.notion.site/Dose-Finding-1420650fa0b047a38a79e1a0633b0aff?pvs=4)
+
 ## Programming: 
 
 #### R
@@ -43,3 +47,9 @@ The main purpose of this page is to provide some useful resources.
 - [Yihui Xie](https://yihui.org/en/)
 - [Xiangyun Huang](https://xiangyun.rbind.io/post/)
 - [Chunqin Deng](http://onbiostatistics.blogspot.com/)
+
+
+## Books 
+
+- Bayesian Modeling of Time Response and Dose Response for Predictive Interim Analysis of a Clinical Trial
+- Data Monitoring Committees in Clinical Trials: A Practical Perspective 
