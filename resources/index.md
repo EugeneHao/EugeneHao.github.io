@@ -18,7 +18,9 @@ The main purpose of this page is to provide some useful resources.
 
 #### Clinical Trial Designs 
 
-- [Dose Finding Literature](https://reliable-frown-add.notion.site/Dose-Finding-1420650fa0b047a38a79e1a0633b0aff?pvs=4)
++ Dose Finding 
+  - [Model-assisted Design](https://reliable-frown-add.notion.site/Model-Assisted-e540e50589f748d98dd14c1a46dd179a?pvs=4)
+  - [Model-based designs](https://reliable-frown-add.notion.site/Model-based-Designs-f5e236dea2ca415caa029d67a21c0432?pvs=4)
 
 ## Programming: 
 
