@@ -55,3 +55,6 @@ The main purpose of this page is to provide some useful resources.
 
 - Bayesian Modeling of Time Response and Dose Response for Predictive Interim Analysis of a Clinical Trial
 - Data Monitoring Committees in Clinical Trials: A Practical Perspective 
+- Bayesian Designs for Phase I-II Clinical Trials
+- Model-Assisted Bayesian Designs for Doese Finding and Optimization: Methods and Applications
+
