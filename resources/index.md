@@ -30,7 +30,6 @@ The main purpose of this page is to provide some useful resources.
 - [Advanced R, Hadley Wickman](https://adv-r.hadley.nz/)
 - [ggplot2 - Elegant Graphics for Data Science, Hadley Wickman](https://ggplot2-book.org/index.html)
 - [bookdown: Authoring Books and Technical Documents with R Markdown, Yihui Xie](https://bookdown.org/yihui/bookdown/)
-- [R Markdown: The Definitive Guide, Yihui Xie](https://bookdown.org/yihui/rmarkdown/)
 - [Tidy Modeling with R](https://www.tmwr.org/index.html)
 
 #### R Shiny 
@@ -39,6 +38,11 @@ The main purpose of this page is to provide some useful resources.
 - [The Shiny AWS Book](https://business-science.github.io/shiny-production-with-aws-book/index.html)
 - [Outstanding User Interfaces with Shiny](https://unleash-shiny.rinterface.com/web-intro.html)
 - [WDI Singapore](https://wdi-sg.github.io/gitbook-2018/ )
+
+#### Publishing 
+
+- [R Markdown: The Definitive Guide, Yihui Xie](https://bookdown.org/yihui/rmarkdown/)
+- [Quarto Guide](https://quarto.org/docs/guide/)
 
 #### SAS 
 
